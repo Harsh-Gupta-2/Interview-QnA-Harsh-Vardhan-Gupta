@@ -1,0 +1,5 @@
+# Keep exact bytes: the build compares and regenerates these files byte for byte,
+# and some CSV cells (Java code) contain their own line endings.
+index.html -text
+src/template.html -text
+data/questions.csv -text

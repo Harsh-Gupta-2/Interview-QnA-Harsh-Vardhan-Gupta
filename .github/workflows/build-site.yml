@@ -1,0 +1,54 @@
+name: Build site
+
+# Rebuilds index.html from data/questions.csv + data/meta.json + src/template.html
+# and commits it, so GitHub Pages publishes the change.
+on:
+  push:
+    paths:
+      - 'data/**'
+      - 'src/**'
+      - 'build/**'
+      - '.github/workflows/build-site.yml'
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'src/**'
+      - 'build/**'
+      - '.github/workflows/build-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # On push, build the latest tip of the branch so queued runs never push stale output.
+          ref: ${{ github.event_name == 'pull_request' && github.sha || github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate data and build index.html
+        run: python build/build.py
+
+      - name: Commit rebuilt index.html
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "index.html already matches the data; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Rebuild index.html from data/questions.csv"
+          git push origin HEAD:${{ github.ref_name }}
