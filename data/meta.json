@@ -1,0 +1,625 @@
+{
+  "stack": "Java 21 / Spring Boot 3.x / Spring Framework 6.x",
+  "sections": [
+    {
+      "id": "S01",
+      "title": "Core Java and OOP",
+      "target": 70
+    },
+    {
+      "id": "S02",
+      "title": "Collections internals",
+      "target": 70
+    },
+    {
+      "id": "S03",
+      "title": "Java 8 to 21 and Streams",
+      "target": 80
+    },
+    {
+      "id": "S04",
+      "title": "JVM, memory, GC and class loading",
+      "target": 60
+    },
+    {
+      "id": "S05",
+      "title": "Multithreading and concurrency",
+      "target": 100
+    },
+    {
+      "id": "S06",
+      "title": "Spring Core and Spring Boot",
+      "target": 90
+    },
+    {
+      "id": "S07",
+      "title": "Spring MVC, REST, Security and JPA",
+      "target": 100
+    },
+    {
+      "id": "S08",
+      "title": "Microservices and resilience",
+      "target": 70
+    },
+    {
+      "id": "S09",
+      "title": "SQL, transactions and data stores",
+      "target": 120
+    },
+    {
+      "id": "S10",
+      "title": "Kafka and RabbitMQ",
+      "target": 70
+    },
+    {
+      "id": "S11",
+      "title": "Security and identity",
+      "target": 70
+    },
+    {
+      "id": "S12",
+      "title": "Design patterns and low-level design",
+      "target": 60
+    },
+    {
+      "id": "S13",
+      "title": "System design outlines",
+      "target": 40
+    },
+    {
+      "id": "S14",
+      "title": "DevOps, cloud and observability",
+      "target": 100
+    },
+    {
+      "id": "S15",
+      "title": "Testing strategy",
+      "target": 40
+    },
+    {
+      "id": "S16",
+      "title": "Integration, ETL and connector design",
+      "target": 40
+    },
+    {
+      "id": "S17",
+      "title": "Production troubleshooting",
+      "target": 50
+    },
+    {
+      "id": "S18",
+      "title": "Java machine-coding exercises",
+      "target": 40
+    },
+    {
+      "id": "S19",
+      "title": "Resume and project deep-dive",
+      "target": 60
+    },
+    {
+      "id": "S20",
+      "title": "Behavioral and HR",
+      "target": 50
+    },
+    {
+      "id": "S21",
+      "title": "Preparation playbooks",
+      "target": null
+    }
+  ],
+  "publication": {
+    "edition": "Full-count edition with interview-notes merge - 2026-10-06",
+    "target_min": 1300,
+    "target_max": 1500,
+    "scope_notice_template": "{total} questions across {sections} sections. {target_status} ({target_min}-{target_max}). {executed} Java examples have recorded executions; {verify_open} explicit VERIFY items remain open. Count completion is not full technical or source verification. SQL drills without executed examples are conceptual, not verified database output. Personal facts remain placeholders where unspecified.",
+    "score_rule": "Score = R x E x H x L. R: 2 if at least one resume hook, otherwise 1. E: E3=4, E2=3, E1=2; E0 estimated very common=2, common=1.5, occasional=1. H: GAP=4, SHAKY=3, UNTESTED=2, STRONG=1. L: L2/L3=2, L1/L4=1. Ties use question ID. This is editorial prioritization, not a prediction of interview probability. Readiness is the supplied mock assessment, not inferred improvement.",
+    "resume_triggers": [
+      {
+        "id": "RT01",
+        "bullet": "Java backend Software Engineer, about 2.5 years including internship, Noida; targets product and fintech backend roles.",
+        "hooks": [
+          "R:Java"
+        ],
+        "direct_ids": [
+          "JH-S20-001",
+          "JH-S21-001",
+          "JH-S21-002"
+        ]
+      },
+      {
+        "id": "RT02",
+        "bullet": "Skills: Java 21+, concurrency, Maven/Gradle, Spring Boot, Hibernate, microservices, REST, JUnit/Mockito and OpenAPI/Swagger.",
+        "hooks": [
+          "R:Java",
+          "R:Concurrency",
+          "R:Spring",
+          "R:Hibernate",
+          "R:Microservices",
+          "R:REST",
+          "R:Testing"
+        ],
+        "direct_ids": [
+          "JH-S14-003",
+          "JH-S06-025"
+        ]
+      },
+      {
+        "id": "RT03",
+        "bullet": "Skills: OAuth 2.0, OIDC, SAML, JWT, SCIM and PKCE.",
+        "hooks": [
+          "R:OAuth",
+          "R:SAML",
+          "R:JWT",
+          "R:SCIM"
+        ],
+        "direct_ids": [
+          "JH-S11-001",
+          "JH-S11-002",
+          "JH-S11-004"
+        ]
+      },
+      {
+        "id": "RT04",
+        "bullet": "Skills: Informatica IICS, MuleSoft, Anaplan Connect, ETL/ELT, Kafka/RabbitMQ, PostgreSQL/MySQL/MongoDB/Redis/Elasticsearch.",
+        "hooks": [
+          "R:Informatica",
+          "R:MuleSoft",
+          "R:Anaplan",
+          "R:ETL",
+          "R:Kafka",
+          "R:RabbitMQ",
+          "R:Postgres",
+          "R:MySQL",
+          "R:Mongo",
+          "R:Redis",
+          "R:Elasticsearch"
+        ],
+        "direct_ids": [
+          "JH-S16-001"
+        ]
+      },
+      {
+        "id": "RT05",
+        "bullet": "Skills: AWS, Docker, Kubernetes, Jenkins, ArgoCD, Harness, CI/CD, Grafana and Linux. Familiarity: React, Python, OpenTelemetry, LaunchDarkly, Playwright and Agile/Kanban.",
+        "hooks": [
+          "R:AWS",
+          "R:Docker",
+          "R:K8s",
+          "R:CICD",
+          "R:Observability"
+        ],
+        "direct_ids": [
+          "JH-S14-003",
+          "JH-S14-004"
+        ],
+        "gap": "React, Python, Linux command drills, LaunchDarkly-specific APIs, Playwright and Agile/Kanban are not covered in depth."
+      },
+      {
+        "id": "RT06",
+        "bullet": "Owns SCIM provisioning, CLM and OAuth Management Service for a financial-planning SaaS client; OAuth flows, vulnerability fixes, Java upgrades, production support and releases via ArgoCD/Jenkins/Harness.",
+        "hooks": [
+          "R:SCIM",
+          "R:OAuth",
+          "R:CICD",
+          "R:Microservices",
+          "R:Incidents"
+        ],
+        "direct_ids": [
+          "JH-S19-001",
+          "JH-S14-003",
+          "JH-S06-026"
+        ]
+      },
+      {
+        "id": "RT07",
+        "bullet": "Built an Informatica IICS Java connector from scratch; core developer on Power BI, MuleSoft and Anaplan Connect connectors.",
+        "hooks": [
+          "R:Informatica",
+          "R:MuleSoft",
+          "R:Anaplan",
+          "R:ETL"
+        ],
+        "direct_ids": [
+          "JH-S19-002",
+          "JH-S16-001"
+        ],
+        "gap": "Power BI and vendor SDK internals require Harsh's actual implementation details."
+      },
+      {
+        "id": "RT08",
+        "bullet": "Healthcare supply-chain work: PostgreSQL optimization and read-only transactions, 87% fewer customer-impacting failures; Kafka services handling 2K+ integrations/hour; OAuth PKCE with Okta; P1 RCA using Grafana/Prometheus/Loki.",
+        "hooks": [
+          "R:Postgres",
+          "R:Kafka",
+          "R:OAuth",
+          "R:Incidents",
+          "R:Observability"
+        ],
+        "direct_ids": [
+          "JH-S19-003",
+          "JH-S19-004",
+          "JH-S17-001",
+          "JH-S07-005",
+          "JH-S11-002"
+        ]
+      },
+      {
+        "id": "RT09",
+        "bullet": "Pluggable Connector Framework: Strategy/Factory, ExecutorService/CompletableFuture, Resilience4j, token-bucket limiting and Redis token cache.",
+        "hooks": [
+          "R:Framework",
+          "R:Patterns",
+          "R:Concurrency",
+          "R:Resilience",
+          "R:Redis"
+        ],
+        "direct_ids": [
+          "JH-S19-005",
+          "JH-S12-001",
+          "JH-S05-031",
+          "JH-S18-007"
+        ],
+        "gap": "The token-bucket example is process-local and educational, not Harsh's production implementation."
+      }
+    ],
+    "priority_playbooks": [
+      {
+        "company": "NPCI",
+        "evidence": "No eligible question evidence",
+        "source_ids": [],
+        "reported_process": "Unavailable. Historical gated/campus records are not used to infer the lateral backend process.",
+        "prepare_first": [
+          "JH-S07-001",
+          "JH-S09-001",
+          "JH-S11-003"
+        ],
+        "note": "Thin evidence. Preparation links are editorial, not reported company questions."
+      },
+      {
+        "company": "JPMorgan Chase",
+        "evidence": "E1, dated and thin",
+        "source_ids": [
+          "S003"
+        ],
+        "reported_process": "One Java-developer report for six years of experience describes a first virtual technical round on 2021-03-13. It does not establish the full or current hiring loop.",
+        "prepare_first": [
+          "JH-S05-010",
+          "JH-S07-001",
+          "JH-S13-003"
+        ],
+        "note": "Only JH-S05-010 is company-attributed. Other links are editorial preparation recommendations."
+      },
+      {
+        "company": "Synechron",
+        "evidence": "E1-E2, user-provided and undated (23 tagged questions)",
+        "source_ids": [
+          "S009"
+        ],
+        "reported_process": "The notes record individual questions only. No round structure, interview date, role or outcome is recorded, so no hiring-loop claim is made.",
+        "prepare_first": [
+          "JH-S02-001",
+          "JH-S04-002",
+          "JH-S04-061",
+          "JH-S05-105",
+          "JH-S09-053",
+          "JH-S18-041"
+        ],
+        "note": "Tagged 'Morgan Stanley (Synechron)' as written in the notes; whether Synechron or Morgan Stanley interviewed is not stated. Tags record that a question was reported, not when."
+      },
+      {
+        "company": "Bajaj (entity unconfirmed)",
+        "evidence": "No collected eligible evidence",
+        "source_ids": [],
+        "reported_process": "Unavailable. Finance, Finserv, Auto and other entities must not be conflated.",
+        "prepare_first": [
+          "JH-S08-001",
+          "JH-S09-004",
+          "JH-S20-001"
+        ],
+        "note": "Thin evidence; entity must be confirmed before collecting or applying interview claims."
+      },
+      {
+        "company": "FIS",
+        "evidence": "No eligible publication evidence",
+        "source_ids": [],
+        "reported_process": "Unavailable; historical off-list source is not reused under the current domain restriction.",
+        "prepare_first": [
+          "JH-S02-002",
+          "JH-S09-005",
+          "JH-S13-001"
+        ],
+        "note": "Thin evidence; links do not mean asked at this company."
+      },
+      {
+        "company": "Nomura",
+        "evidence": "No eligible publication evidence",
+        "source_ids": [],
+        "reported_process": "Unavailable; historical gated vague account is excluded.",
+        "prepare_first": [
+          "JH-S05-017",
+          "JH-S07-001",
+          "JH-S18-003"
+        ],
+        "note": "Thin evidence; editorial preparation only."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "S001",
+      "url": "https://interviewexperiences.in/experience/npci/npci-java-developer",
+      "site": "interviewexperiences.in",
+      "date_accessed": "2026-10-06",
+      "company": "NPCI",
+      "role": "Java Developer",
+      "experience": "1 year reported",
+      "year": null,
+      "post_date": "2026-02-11",
+      "rounds": [],
+      "type": "public-post",
+      "eligible": false,
+      "independence_group": "S001",
+      "notes": "Historical partial page had a login prompt; excluded under access rules and current domain restriction. Old interview year was inferred from publication. Four attributions withdrawn. Not revisited."
+    },
+    {
+      "id": "S002",
+      "url": "https://www.geeksforgeeks.org/interview-experiences/npci-interview-experience-on-campus-2023/",
+      "site": "geeksforgeeks.org",
+      "date_accessed": "2026-10-06",
+      "company": "NPCI",
+      "role": "On-campus multiple tracks",
+      "experience": "fresher estimated",
+      "year": 2023,
+      "post_date": "2023-10-30",
+      "rounds": [
+        "Online assessment",
+        "Combined technical and HR"
+      ],
+      "type": "public-post",
+      "eligible": false,
+      "independence_group": "S002",
+      "notes": "Historical campus, ML-heavy report with SQL basics. Not revalidated for publication; no current question or lateral-process claims rely on it. Exact interview date unknown."
+    },
+    {
+      "id": "S003",
+      "url": "https://www.geeksforgeeks.org/interview-experiences/jp-morgan-chase-interview-experience-for-java-developer/",
+      "site": "geeksforgeeks.org",
+      "date_accessed": "2026-10-06",
+      "company": "JPMorgan Chase",
+      "role": "Java Developer",
+      "experience": "6 years stated",
+      "level": "L3 mapped from stated experience",
+      "year": 2021,
+      "interview_date": "2021-03-13",
+      "post_date": "2021-03-31",
+      "dated": true,
+      "rounds": [
+        "First technical round, virtual"
+      ],
+      "type": "public-post",
+      "eligible": true,
+      "independence_group": "S003",
+      "notes": "Reopened and read during publication review. Explicitly reports alternatives to synchronized and deadlock avoidance. Also mentions REST security, functional interfaces, transactions, pagination, resource cleanup and profiling. Only the mapped question is tagged. One dated report, not a full hiring process."
+    },
+    {
+      "id": "S004",
+      "url": "https://takeuforward.org/community/interview-experiences/fis-global-java-developer-3-yoe-interview-experience",
+      "site": "takeuforward.org",
+      "date_accessed": "2026-10-06",
+      "company": "FIS",
+      "role": "Software Engineer (Java Developer)",
+      "experience": "3 years in title",
+      "year": null,
+      "post_date": null,
+      "rounds": [
+        "Online assessment",
+        "Two technical discussions",
+        "Design discussion"
+      ],
+      "type": "public-post",
+      "eligible": false,
+      "independence_group": "S004",
+      "notes": "Historical readable account outside current approved domains. Relative publication age was previously promoted to exact dates; dates corrected to unknown. Not revisited or used for new claims."
+    },
+    {
+      "id": "S005",
+      "url": "https://interviewexperiences.in/experience/nomura/nomura-java-developer-interview-questions-2025",
+      "site": "interviewexperiences.in",
+      "date_accessed": "2026-10-06",
+      "company": "Nomura",
+      "role": "Java Developer",
+      "experience": null,
+      "year": 2025,
+      "post_date": "2025-12-14",
+      "rounds": [
+        "Coding mentioned in summary"
+      ],
+      "type": "public-post",
+      "eligible": false,
+      "independence_group": "S005",
+      "notes": "Historical login-gated page with vague coding description. Excluded, not revisited; no supported question or process claim."
+    },
+    {
+      "id": "S006",
+      "url": "https://www.geeksforgeeks.org/jpmorgan-chase-interview-experience/",
+      "site": "geeksforgeeks.org",
+      "date_accessed": "2026-10-06",
+      "company": "JPMorgan Chase",
+      "role": "Summer internship",
+      "experience": "student",
+      "year": null,
+      "post_date": "2024-05-21",
+      "rounds": [
+        "Campus screen",
+        "Coding assessment",
+        "Recorded behavioral interview"
+      ],
+      "type": "public-post",
+      "eligible": false,
+      "independence_group": "S006",
+      "notes": "Historical internship report. Publication year was previously used as interview year; corrected to unknown. Not revalidated and not evidence for lateral backend rounds."
+    },
+    {
+      "id": "S007",
+      "url": null,
+      "site": "user-provided interview notes",
+      "date_accessed": "2026-10-06",
+      "company": "Wissen",
+      "role": "Java backend (role not stated in notes)",
+      "experience": null,
+      "year": null,
+      "post_date": null,
+      "rounds": [],
+      "type": "user-provided",
+      "eligible": true,
+      "dated": false,
+      "independence_group": "S007",
+      "file": "Java_Backend_Interview_QnA (2).pdf",
+      "notes": "Handwritten interview notes compiled into a question bank PDF supplied by Harsh. Only the fact that the question was asked is used as evidence; the PDF's answers are not treated as source evidence. No interview date, year, role, rounds or outcome recorded. Notes list questions only."
+    },
+    {
+      "id": "S008",
+      "url": null,
+      "site": "user-provided interview notes",
+      "date_accessed": "2026-10-06",
+      "company": "Impetus",
+      "role": "Java backend (role not stated in notes)",
+      "experience": null,
+      "year": null,
+      "post_date": null,
+      "rounds": [],
+      "type": "user-provided",
+      "eligible": true,
+      "dated": false,
+      "independence_group": "S008",
+      "file": "Java_Backend_Interview_QnA (2).pdf",
+      "notes": "Handwritten interview notes compiled into a question bank PDF supplied by Harsh. Only the fact that the question was asked is used as evidence; the PDF's answers are not treated as source evidence. No interview date, year, role, rounds or outcome recorded. Notes list questions only."
+    },
+    {
+      "id": "S009",
+      "url": null,
+      "site": "user-provided interview notes",
+      "date_accessed": "2026-10-06",
+      "company": "Morgan Stanley (Synechron)",
+      "role": "Java backend (role not stated in notes)",
+      "experience": null,
+      "year": null,
+      "post_date": null,
+      "rounds": [],
+      "type": "user-provided",
+      "eligible": true,
+      "dated": false,
+      "independence_group": "S009",
+      "file": "Java_Backend_Interview_QnA (2).pdf",
+      "notes": "Handwritten interview notes compiled into a question bank PDF supplied by Harsh. Only the fact that the question was asked is used as evidence; the PDF's answers are not treated as source evidence. No interview date, year, role, rounds or outcome recorded. Notes use both 'Morgan Stanley' and 'Morgan Stanley (Synechron)' and are treated here as one set of notes. The notes do not say whether Synechron or Morgan Stanley conducted the interview. Notes list questions only."
+    },
+    {
+      "id": "S010",
+      "url": null,
+      "site": "user-provided interview notes",
+      "date_accessed": "2026-10-06",
+      "company": "Accolite",
+      "role": "Java backend (role not stated in notes)",
+      "experience": null,
+      "year": null,
+      "post_date": null,
+      "rounds": [],
+      "type": "user-provided",
+      "eligible": true,
+      "dated": false,
+      "independence_group": "S010",
+      "file": "Java_Backend_Interview_QnA (2).pdf",
+      "notes": "Handwritten interview notes compiled into a question bank PDF supplied by Harsh. Only the fact that the question was asked is used as evidence; the PDF's answers are not treated as source evidence. No interview date, year, role, rounds or outcome recorded. Notes list questions only."
+    },
+    {
+      "id": "S011",
+      "url": null,
+      "site": "user-provided interview notes",
+      "date_accessed": "2026-10-06",
+      "company": "Yash",
+      "role": "Java backend (role not stated in notes)",
+      "experience": null,
+      "year": null,
+      "post_date": null,
+      "rounds": [],
+      "type": "user-provided",
+      "eligible": true,
+      "dated": false,
+      "independence_group": "S011",
+      "file": "Java_Backend_Interview_QnA (2).pdf",
+      "notes": "Handwritten interview notes compiled into a question bank PDF supplied by Harsh. Only the fact that the question was asked is used as evidence; the PDF's answers are not treated as source evidence. No interview date, year, role, rounds or outcome recorded. Written as 'Yash' in the notes; this may be YASH Technologies but the notes do not say. Notes list questions only."
+    },
+    {
+      "id": "S012",
+      "url": null,
+      "site": "user-provided interview notes",
+      "date_accessed": "2026-10-06",
+      "company": "Capgemini",
+      "role": "Java backend (role not stated in notes)",
+      "experience": null,
+      "year": null,
+      "post_date": null,
+      "rounds": [],
+      "type": "user-provided",
+      "eligible": true,
+      "dated": false,
+      "independence_group": "S012",
+      "file": "Java_Backend_Interview_QnA (2).pdf",
+      "notes": "Handwritten interview notes compiled into a question bank PDF supplied by Harsh. Only the fact that the question was asked is used as evidence; the PDF's answers are not treated as source evidence. No interview date, year, role, rounds or outcome recorded. Notes list questions only."
+    },
+    {
+      "id": "S013",
+      "url": null,
+      "site": "user-provided interview notes",
+      "date_accessed": "2026-10-06",
+      "company": "Concentrix",
+      "role": "Java backend (role not stated in notes)",
+      "experience": null,
+      "year": null,
+      "post_date": null,
+      "rounds": [],
+      "type": "user-provided",
+      "eligible": true,
+      "dated": false,
+      "independence_group": "S013",
+      "file": "Java_Backend_Interview_QnA (2).pdf",
+      "notes": "Handwritten interview notes compiled into a question bank PDF supplied by Harsh. Only the fact that the question was asked is used as evidence; the PDF's answers are not treated as source evidence. No interview date, year, role, rounds or outcome recorded. Notes list questions only."
+    },
+    {
+      "id": "S014",
+      "url": null,
+      "site": "user-provided interview notes",
+      "date_accessed": "2026-10-06",
+      "company": "EY",
+      "role": "Java backend (role not stated in notes)",
+      "experience": null,
+      "year": null,
+      "post_date": null,
+      "rounds": [],
+      "type": "user-provided",
+      "eligible": true,
+      "dated": false,
+      "independence_group": "S014",
+      "file": "Java_Backend_Interview_QnA (2).pdf",
+      "notes": "Handwritten interview notes compiled into a question bank PDF supplied by Harsh. Only the fact that the question was asked is used as evidence; the PDF's answers are not treated as source evidence. No interview date, year, role, rounds or outcome recorded. Notes list questions only."
+    },
+    {
+      "id": "S015",
+      "url": null,
+      "site": "user-provided interview notes",
+      "date_accessed": "2026-10-06",
+      "company": "Randstad",
+      "role": "Java backend (role not stated in notes)",
+      "experience": null,
+      "year": null,
+      "post_date": null,
+      "rounds": [],
+      "type": "user-provided",
+      "eligible": true,
+      "dated": false,
+      "independence_group": "S015",
+      "file": "Java_Backend_Interview_QnA (2).pdf",
+      "notes": "Handwritten interview notes compiled into a question bank PDF supplied by Harsh. Only the fact that the question was asked is used as evidence; the PDF's answers are not treated as source evidence. No interview date, year, role, rounds or outcome recorded. Notes list questions only."
+    }
+  ]
+}
